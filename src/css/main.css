@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Document
    ========================================================================== */
 /**
@@ -395,6 +396,46 @@ nav {
   .headerTextsWrapper h1:hover {
     color: rgba(29, 29, 29, 0.4);
   }
+}
+
+.overlayContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 350ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.overlayContainer h1 {
+  cursor: pointer;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  line-height: 1.2em;
+  text-transform: none;
+}
+.overlayContainer h1::after {
+  content: " »";
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.closeIcon {
+  cursor: pointer;
+  margin: 1rem 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.overlayTextsContainer {
+  margin-top: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
