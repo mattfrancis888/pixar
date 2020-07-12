@@ -1,8 +1,22 @@
 nav {
-    padding: 5rem 15rem;
+    padding: 1rem 2rem;
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 5rem 15rem;
+    }
     display: flex;
     justify-content: space-between;
-    .headerTextsWrapper {
+    align-items: center;
+}
+
+.hamburgerIcon {
+    @media screen and (min-width: $md_breakpoint) {
+        display: none;
+    }
+}
+
+.headerTextsWrapper {
+    display: none;
+    @media screen and (min-width: $md_breakpoint) {
         display: flex;
         text-transform: uppercase;
         h1 {
