@@ -4,31 +4,31 @@ import close from "../img/close.png";
 import { connect } from "react-redux";
 import { showHeaderOverlay } from "../actions";
 import { StoreState } from "../reducers";
-interface OverlayProps {
-    headerOverlay: boolean;
-    showHeaderOverlay(shouldShowHeaderOverlay: boolean): void;
-}
+import { HeaderProps } from "./Header";
 
-const Overlay: React.FC<OverlayProps> = (props) => {
-    const renderOverlay = (): JSX.Element => {
-        return (
-            <div className="overlayContainer">
-                <div className="overlayTextsContainer">
-                    <h1>{FEATURE_FILMS}</h1>
-                    <h1>{ABOUT}</h1>
-                </div>
-                <img
-                    className="closeIcon"
-                    onClick={() => {
-                        props.showHeaderOverlay(false);
-                    }}
-                    src={close}
-                    alt="close"
-                />
+const Overlay: React.FC<HeaderProps> = (props) => {
+    return (
+        <div
+            className={
+                props.headerOverlay
+                    ? "overlayContainer"
+                    : "overlayContainerHidden"
+            }
+        >
+            <div className="overlayTextsContainer">
+                <h1>{FEATURE_FILMS}</h1>
+                <h1>{ABOUT}</h1>
             </div>
-        );
-    };
-    return <div>{props.headerOverlay ? renderOverlay() : null}</div>;
+            <img
+                className="closeIcon"
+                onClick={() => {
+                    props.showHeaderOverlay(false);
+                }}
+                src={close}
+                alt="close"
+            />
+        </div>
+    );
 };
 const mapStateToProps = (state: StoreState) => {
     return {

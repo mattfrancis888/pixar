@@ -6,7 +6,8 @@ import Overlay from "./Overlay";
 import { connect } from "react-redux";
 import { showHeaderOverlay } from "../actions";
 import { StoreState } from "../reducers";
-interface HeaderProps {
+
+export interface HeaderProps {
     headerOverlay: boolean;
     showHeaderOverlay(shouldShowHeaderOverlay: boolean): void;
 }
@@ -22,12 +23,13 @@ const Header: React.FC<HeaderProps> = (props) => {
                     props.showHeaderOverlay(true);
                 }}
             />
+
             <div className="headerTextsWrapper">
                 <h1>{FEATURE_FILMS}</h1>
                 <h1>{ABOUT}</h1>
             </div>
-
-            {props.headerOverlay ? <Overlay /> : null}
+            <Overlay />
+            {/* {props.headerOverlay ? <Overlay /> : null} */}
         </nav>
     );
 };
