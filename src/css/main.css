@@ -482,6 +482,11 @@ nav {
   flex-direction: row;
   padding: 12rem 2rem;
 }
+@media screen and (min-width: 768px) {
+  .contentContainer {
+    padding: 21rem 2rem;
+  }
+}
 .contentContainer h2 {
   color: #1d1d1d;
   text-align: center;
@@ -489,6 +494,12 @@ nav {
   font-size: 2.3rem;
   line-height: 4rem;
   text-transform: none;
+}
+@media screen and (min-width: 768px) {
+  .contentContainer h2 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
