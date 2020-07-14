@@ -479,15 +479,16 @@ nav {
 .contentContainer {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   padding: 12rem 2rem;
 }
 @media screen and (min-width: 768px) {
   .contentContainer {
-    padding: 21rem 2rem;
+    padding: 21rem 3rem;
   }
 }
-.contentContainer h2 {
+
+.quote {
   color: #1d1d1d;
   text-align: center;
   font-weight: 400;
@@ -496,9 +497,43 @@ nav {
   text-transform: none;
 }
 @media screen and (min-width: 768px) {
-  .contentContainer h2 {
+  .quote {
     font-size: 3.2rem;
     line-height: 5rem;
+  }
+}
+
+.featuredContentContainer {
+  margin-top: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.featuredContentContainer h2 {
+  text-transform: uppercase;
+}
+.featuredContentContainer img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .featuredContentContainer {
+    flex-direction: row;
+  }
+}
+
+.featuredContent {
+  text-align: center;
+  margin: 0 1rem;
+}
+.featuredContent h2 {
+  padding: 3rem 0;
+  font-style: normal;
+  letter-spacing: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .featuredContent h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
   }
 }
 
