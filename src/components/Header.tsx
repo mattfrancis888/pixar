@@ -14,7 +14,7 @@ export interface HeaderProps {
 const Header: React.FC<HeaderProps> = (props) => {
     return (
         <nav>
-            <img src={logo} alt="pixar-logo" />
+            <img className="logo" src={logo} alt="pixar-logo" />
             <img
                 className="hamburgerIcon"
                 src={hamburger}

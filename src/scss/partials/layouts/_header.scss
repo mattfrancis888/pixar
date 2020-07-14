@@ -1,14 +1,29 @@
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
     padding: 1rem 2rem;
-    @media screen and (min-width: $md_breakpoint) {
-        padding: 5rem 15rem;
-    }
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 2rem 7rem;
+    }
 }
 
+.logo {
+    width: 8rem;
+    @media screen and (min-width: $sm_breakpoint) {
+        width: 12rem;
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        width: 17rem;
+    }
+}
 .hamburgerIcon {
+    width: 3.4rem;
     @media screen and (min-width: $md_breakpoint) {
         display: none;
     }
