@@ -360,6 +360,11 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -367,10 +372,27 @@ nav {
 }
 @media screen and (min-width: 768px) {
   nav {
-    padding: 5rem 15rem;
+    padding: 2rem 7rem;
   }
 }
 
+.logo {
+  width: 8rem;
+}
+@media screen and (min-width: 520px) {
+  .logo {
+    width: 12rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 17rem;
+  }
+}
+
+.hamburgerIcon {
+  width: 3.4rem;
+}
 @media screen and (min-width: 768px) {
   .hamburgerIcon {
     display: none;
@@ -415,16 +437,16 @@ nav {
 
 .overlayContainer {
   display: flex;
-  position: fixed;
-  left: 0;
-  top: 0;
   flex-direction: row;
   justify-content: space-between;
   z-index: 100;
   background-color: white;
+  padding: 5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
   height: 100vh;
   width: 100vw;
-  padding: 5rem;
   transition: all 0.7s ease 0s;
 }
 
@@ -452,6 +474,67 @@ nav {
   content: " »";
   font-family: sans-serif;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .contentContainer {
+    padding: 21rem 3rem;
+  }
+}
+
+.quote {
+  color: #1d1d1d;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  text-transform: none;
+}
+@media screen and (min-width: 768px) {
+  .quote {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+}
+
+.featuredContentContainer {
+  margin-top: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.featuredContentContainer h2 {
+  text-transform: uppercase;
+}
+.featuredContentContainer img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .featuredContentContainer {
+    flex-direction: row;
+  }
+}
+
+.featuredContent {
+  text-align: center;
+  margin: 0 1rem;
+}
+.featuredContent h2 {
+  padding: 3rem 0;
+  font-style: normal;
+  letter-spacing: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .featuredContent h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
