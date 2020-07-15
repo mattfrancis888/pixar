@@ -4,6 +4,7 @@ import { Route, Router, Switch } from "react-router-dom";
 import history from "../history";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
+import featureFilms from "../components/FeatureFilms";
 const App: React.FC<{}> = () => {
     return (
         <React.Fragment>
@@ -11,6 +12,11 @@ const App: React.FC<{}> = () => {
                 <Header />
                 <Switch>
                     <Route path="/" exact component={Content} />
+                    <Route
+                        path="/featured-films"
+                        exact
+                        component={featureFilms}
+                    />
                 </Switch>
                 <Footer />
             </Router>

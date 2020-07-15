@@ -1,0 +1,30 @@
+.heroContainer {
+    position: relative;
+    z-index: -999; //Created for parallax effect
+    //POSITION:RELATIVE! thus, the child of this elmeent
+    //will always inherit this z-index when you compare it to an
+    //element outside of this parent!
+    h1 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        color: white;
+        font-weight: 900;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 5rem;
+        }
+    }
+    height: 53rem;
+}
+.heroImage {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
