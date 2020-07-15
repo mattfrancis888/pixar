@@ -537,4 +537,45 @@ nav {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.disneyLogo {
+  width: 13rem;
+  height: 7.5rem;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .disneyLogo {
+    width: 9rem;
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .disneyLogo {
+    width: 13rem;
+    height: 7.5rem;
+  }
+}
+
+.companyFoundedText {
+  letter-spacing: 0.29rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.socialsIconContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.socialsIconContainer .youtubeSvgIcon {
+  width: 7rem;
+  height: 7rem;
+}
+
 /*# sourceMappingURL=main.css.map */
