@@ -10,12 +10,25 @@ footer {
         width: 9rem;
         height: 5rem;
     }
+    @media screen and (min-width: $lg_breakpoint) {
+        width: 13rem;
+        height: 7.5rem;
+    }
     margin: auto;
-    margin-bottom: 5rem;
 }
 .companyFoundedText {
     letter-spacing: 0.29rem;
     line-height: 1.7rem;
     text-transform: uppercase;
     font-style: normal;
+}
+
+.socialsIconContainer {
+    display: flex;
+    justify-content: center;
+    .youtubeSvgIcon {
+        width: 7rem;
+        height: 7rem;
+    }
+    padding: 2rem;
 }
