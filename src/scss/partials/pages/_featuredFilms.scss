@@ -28,3 +28,37 @@
     height: 100%;
     object-fit: cover;
 }
+.filmsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6rem;
+    background-color: white;
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 10rem 3rem;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 10rem 14rem;
+    }
+    @media screen and (min-width: $xl_breakpoint) {
+        padding: 10rem 22rem;
+    }
+}
+.film {
+    width: 24rem;
+    padding: 4rem;
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 3rem; //smaller padding = bigger picture
+    }
+
+    img {
+        width: 100%;
+    }
+    h2 {
+        letter-spacing: 0.1rem;
+        text-align: center;
+        color: rgba(29, 29, 29, 0.7);
+        font-size: 1.4rem;
+    }
+}
