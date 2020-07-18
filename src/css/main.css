@@ -644,14 +644,20 @@ footer {
     padding: 3rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .film {
+    padding: 2rem;
+  }
+}
 .film img {
   width: 100%;
 }
 .film h2 {
   letter-spacing: 0.1rem;
   text-align: center;
+  font-style: normal;
   color: rgba(29, 29, 29, 0.7);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

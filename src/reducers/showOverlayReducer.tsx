@@ -1,5 +1,4 @@
-import { ActionTypes } from "../actions/types";
-import { HeaderOverlayAction } from "../actions";
+import { ActionTypes, HeaderOverlayAction } from "../actions";
 export default (state: boolean = false, action: HeaderOverlayAction) => {
     switch (action.type) {
         case ActionTypes.SHOW_HEADER_OVERLAY:

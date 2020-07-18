@@ -15,38 +15,31 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
     }, []);
     // console.log(props);
 
-    const renderList = (): JSX.Element => {
+    const renderList = (): JSX.Element | JSX.Element[] => {
         if (props.films.length === 0) return <div>Loading</div>;
         else
-            return (
-                <div>
-                    <div className="heroContainer">
-                        <img
-                            className="heroImage"
-                            src={onwardsHero}
-                            alt="onwards scene"
-                        />
-                        <h1>Featured Films</h1>
+            return props.films.map((film) => {
+                return (
+                    <div className="film">
+                        <img src={toystory} alt="film" />
+                        <h2>{film.title}</h2>
                     </div>
-
-                    <div className="filmsContainer">
-                        <div className="film">
-                            <img src={toystory} alt="film" />
-                            <h2>{props.films[0].title}</h2>
-                        </div>
-                        <div className="film">
-                            <img src={toystory} alt="film" />
-                            <h2>{props.films[1].title}</h2>
-                        </div>
-                        <div className="film">
-                            <img src={toystory} alt="film" />
-                            <h2>{props.films[2].title}</h2>
-                        </div>
-                    </div>
-                </div>
-            );
+                );
+            });
     };
-    return <React.Fragment>{renderList()}</React.Fragment>;
+    return (
+        <div>
+            <div className="heroContainer">
+                <img
+                    className="heroImage"
+                    src={onwardsHero}
+                    alt="onwards scene"
+                />
+                <h1>Featured Films</h1>
+            </div>
+            <div className="filmsContainer">{renderList()}</div>
+        </div>
+    );
 };
 
 const mapStateToProps = (state: StoreState): { films: Films[] } => {
