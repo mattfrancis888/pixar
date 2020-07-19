@@ -3,7 +3,9 @@ import films from "./axiosConfig";
 import { Dispatch } from "redux";
 
 export interface Films {
+    id: Number;
     title: String;
+    image: String;
 }
 export interface FetchFilmsAction {
     type: ActionTypes.FETCH_FILMS;

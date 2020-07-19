@@ -1,6 +1,6 @@
 import React from "react";
 import pixarCareer from "../img/pixar_career.jpeg";
-import onwards from "../img/onwards.jpg";
+import onward from "../img/onward.jpg";
 import soul from "../img/soul.jpg";
 const Content: React.FC<{}> = () => {
     return (
@@ -26,7 +26,7 @@ const Content: React.FC<{}> = () => {
                         <h2 className="">Soul</h2>
                     </div>
                     <div className="featuredContent">
-                        <img src={onwards} alt="Onward" />
+                        <img src={onward} alt="Onward" />
                         <h2 className="">Onward Trailers</h2>
                     </div>
                 </div>

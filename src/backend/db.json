@@ -1,13 +1,19 @@
 {
     "films": [
         {
-            "title": "Onward"
+            "id": 1,
+            "title": "Onward",
+            "image": "onwardFilm_akunoo.jpg"
         },
         {
-            "title": "Toy Story 4"
+            "id": 2,
+            "title": "Toy Story 4",
+            "image": "toystory4Film_iu1308.jpg"
         },
         {
-            "title": "Incredibles 2"
+            "id": 3,
+            "title": "Incredibles 2",
+            "image": "incredibles2Film_kan9rw.png"
         }
     ]
 }

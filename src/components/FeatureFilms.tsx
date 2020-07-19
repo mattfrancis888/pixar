@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Films, fetchFilms } from "../actions";
 import { StoreState } from "../reducers";
-import onwardsHero from "../img/onwards_hero.jpg";
+import onwardHero from "../img/onward_hero.jpg";
+import { Image, CloudinaryContext } from "cloudinary-react";
 import toystory from "../img/toystory.jpg";
 
 export interface FeatureFilmsProps {
@@ -20,8 +21,11 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
         else
             return props.films.map((film) => {
                 return (
-                    <div className="film">
-                        <img src={toystory} alt="film" />
+                    <div className="film" key={film.id.toString()}>
+                        {/* <img src={toystory} alt="film" /> */}
+                        <CloudinaryContext cloudName="du8n2aa4p">
+                            <Image publicId={film.image}></Image>
+                        </CloudinaryContext>
                         <h2>{film.title}</h2>
                     </div>
                 );
@@ -30,11 +34,7 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
     return (
         <div>
             <div className="heroContainer">
-                <img
-                    className="heroImage"
-                    src={onwardsHero}
-                    alt="onwards scene"
-                />
+                <img className="heroImage" src={onwardHero} alt=" scene" />
                 <h1>Featured Films</h1>
             </div>
             <div className="filmsContainer">{renderList()}</div>
