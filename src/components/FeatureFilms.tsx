@@ -4,7 +4,6 @@ import { Films, fetchFilms } from "../actions";
 import { StoreState } from "../reducers";
 import onwardHero from "../img/onward_hero.jpg";
 import { Image, CloudinaryContext } from "cloudinary-react";
-import toystory from "../img/toystory.jpg";
 
 export interface FeatureFilmsProps {
     fetchFilms(): any;
@@ -21,13 +20,18 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
         else
             return props.films.map((film) => {
                 return (
-                    <div className="film" key={film.id.toString()}>
-                        {/* <img src={toystory} alt="film" /> */}
-                        <CloudinaryContext cloudName="du8n2aa4p">
-                            <Image publicId={film.image}></Image>
-                        </CloudinaryContext>
-                        <h2>{film.title}</h2>
-                    </div>
+                    <CloudinaryContext cloudName="du8n2aa4p">
+                        <div className="film" key={film.id.toString()}>
+                            {/* <img src={toystory} alt="film" /> */}
+
+                            <Image
+                                className="filmImage"
+                                publicId={film.image}
+                            ></Image>
+
+                            <h2>{film.title}</h2>
+                        </div>
+                    </CloudinaryContext>
                 );
             });
     };

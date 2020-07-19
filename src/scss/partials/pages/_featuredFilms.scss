@@ -30,34 +30,37 @@
 }
 .filmsContainer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 6rem;
+    flex-direction: column;
+    padding: 5rem 3rem;
     background-color: white;
+
     @media screen and (min-width: $md_breakpoint) {
-        padding: 10rem 3rem;
+        padding: 5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     @media screen and (min-width: $lg_breakpoint) {
-        padding: 10rem 14rem;
+        padding: 5rem 12rem;
     }
     @media screen and (min-width: $xl_breakpoint) {
-        padding: 10rem 22rem;
+        padding: 5rem 8rem;
     }
 }
 .film {
-    width: 24rem;
-    padding: 4rem;
+    width: 20rem;
+    height: 30rem;
+    margin: 3rem auto;
+
     @media screen and (min-width: $md_breakpoint) {
-        padding: 3rem; //smaller padding = bigger picture
-    }
-    @media screen and (min-width: $lg_breakpoint) {
-        padding: 2rem; //smaller padding = bigger picture
+        margin: 5rem;
     }
 
-    img {
-        width: 100%;
+    @media screen and (min-width: $xl_breakpoint) {
+        width: 25rem;
+        height: 37rem;
     }
+
     h2 {
         letter-spacing: 0.1rem;
         text-align: center;
@@ -65,4 +68,8 @@
         color: rgba(29, 29, 29, 0.7);
         font-size: 1.2rem;
     }
+}
+.filmImage {
+    width: 100%;
+    height: 100%;
 }
