@@ -4,7 +4,7 @@ import { Films, fetchFilms } from "../actions";
 import { StoreState } from "../reducers";
 import onwardHero from "../img/onward_hero.jpg";
 import { Image, CloudinaryContext } from "cloudinary-react";
-
+import Loading from "./Loading";
 export interface FeatureFilmsProps {
     fetchFilms(): any;
     films: Films[];
@@ -13,17 +13,19 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
     useEffect(() => {
         props.fetchFilms();
     }, []);
-    // console.log(props);
 
     const renderList = (): JSX.Element | JSX.Element[] => {
-        if (props.films.length === 0) return <div>Loading</div>;
+        if (props.films.length === 0)
+            return (
+                <div className="loadingCenter">
+                    <Loading />
+                </div>
+            );
         else
             return props.films.map((film) => {
                 return (
                     <CloudinaryContext cloudName="du8n2aa4p">
                         <div className="film" key={film.id.toString()}>
-                            {/* <img src={toystory} alt="film" /> */}
-
                             <Image
                                 className="filmImage"
                                 publicId={film.image}

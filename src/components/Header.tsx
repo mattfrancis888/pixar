@@ -7,15 +7,25 @@ import { connect } from "react-redux";
 import { showHeaderOverlay } from "../actions";
 import { StoreState } from "../reducers";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 export interface HeaderProps {
     headerOverlay: boolean;
     showHeaderOverlay(shouldShowHeaderOverlay: boolean): void;
 }
 const Header: React.FC<HeaderProps> = (props) => {
-    const history = useHistory();
+    //const history = useHistory();
     return (
         <nav>
-            <img className="logo" src={logo} alt="pixar-logo" />
+            <Link to="/">
+                <img
+                    className="logo"
+                    src={logo}
+                    alt="pixar-logo"
+                    // onClick={() => {
+                    //     history.push("/");
+                    // }}
+                />
+            </Link>
             <img
                 className="hamburgerIcon"
                 src={hamburger}
@@ -26,13 +36,15 @@ const Header: React.FC<HeaderProps> = (props) => {
             />
 
             <div className="headerTextsWrapper">
-                <h1
-                    onClick={() => {
-                        history.push("/featured-films");
-                    }}
-                >
-                    {FEATURE_FILMS}
-                </h1>
+                <Link to="/featured-films">
+                    <h1
+                    // onClick={() => {
+                    //     history.push("/featured-films");
+                    // }}
+                    >
+                        {FEATURE_FILMS}
+                    </h1>
+                </Link>
                 <h1>{ABOUT}</h1>
             </div>
             <Overlay />

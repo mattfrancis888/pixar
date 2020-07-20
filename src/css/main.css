@@ -580,6 +580,10 @@ footer {
   height: 7rem;
 }
 
+.loadingCenter {
+  margin: auto;
+}
+
 .heroContainer {
   position: relative;
   z-index: -999;

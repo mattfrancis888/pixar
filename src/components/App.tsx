@@ -2,9 +2,9 @@ import React from "react";
 import Header from "./Header";
 import { Route, Router, Switch } from "react-router-dom";
 import history from "../history";
-import Content from "../components/Content";
+import Content from "./Content";
 import Footer from "../components/Footer";
-import featureFilms from "../components/FeatureFilms";
+import featureFilms from "./FeatureFilms";
 const App: React.FC<{}> = () => {
     return (
         <React.Fragment>
