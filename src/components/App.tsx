@@ -5,7 +5,7 @@ import history from "../browserHistory";
 import Content from "./Content";
 import Footer from "../components/Footer";
 import featureFilms from "./FeatureFilms";
-
+import SoulPreview from "./SoulPreview";
 const App: React.FC<{}> = () => {
     console.log(history);
     return (
@@ -19,6 +19,7 @@ const App: React.FC<{}> = () => {
                         exact
                         component={featureFilms}
                     />
+                    <Route path="/soul-preview" exact component={SoulPreview} />
                 </Switch>
                 <Footer />
             </Router>
