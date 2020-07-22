@@ -1,0 +1,75 @@
+.heroContainer {
+    position: relative;
+    z-index: -999; //Created for parallax effect
+    //POSITION:RELATIVE! thus, the child of this elmeent
+    //will always inherit this z-index when you compare it to an
+    //element outside of this parent!
+    h1 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        color: white;
+        font-weight: 900;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 5rem;
+        }
+    }
+    height: 53rem;
+}
+.heroImage {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.filmsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem;
+    background-color: white;
+
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 5rem 12rem;
+    }
+    @media screen and (min-width: $xl_breakpoint) {
+        padding: 5rem 8rem;
+    }
+}
+.film {
+    width: 20rem;
+    height: 30rem;
+    margin: 3rem auto;
+
+    @media screen and (min-width: $md_breakpoint) {
+        margin: 5rem;
+    }
+
+    @media screen and (min-width: $xl_breakpoint) {
+        width: 25rem;
+        height: 37rem;
+    }
+
+    h2 {
+        letter-spacing: 0.1rem;
+        text-align: center;
+        font-style: normal;
+        color: rgba(29, 29, 29, 0.7);
+        font-size: 1.2rem;
+    }
+}
+.filmImage {
+    width: 100%;
+    height: 100%;
+}
