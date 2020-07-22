@@ -8,7 +8,7 @@
 
 .soulDescriptionContainer {
     text-align: center;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid $very-light-grey;
     margin: 0 1.5rem;
     margin-top: 10rem;
     padding-top: 3rem;
@@ -17,8 +17,7 @@
         font-style: normal;
         font-size: 2.1rem;
         line-height: 3.7rem;
-        text-transform: none;
-        color: $light-grey;
+        color: rgba(29, 29, 29, 0.7);
     }
     @media screen and (min-width: $sm_breakpoint) {
         margin: 0 5rem;
@@ -31,5 +30,56 @@
     }
     @media screen and (min-width: $lg_breakpoint) {
         margin: 0 25rem;
+    }
+}
+
+.trailersContainer {
+    border-top: 1px solid $very-light-grey;
+    margin: 5rem 3rem;
+    h1 {
+        font-size: 3.2rem;
+        letter-spacing: 0.2rem;
+        line-height: 3.3rem;
+        font-weight: 400;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+
+    @media screen and (min-width: $md_breakpoint) {
+        margin: 5rem 8rem;
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        margin: 5rem 12rem;
+    }
+    @media screen and (min-width: $xl_breakpoint) {
+        margin: 5rem 14rem;
+    }
+}
+
+.trailerVideosContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+    .soulTrailerContainer {
+        width: 100%;
+        height: 33rem;
+        margin-bottom: 5rem;
+        @media screen and (min-width: $sm_breakpoint) {
+            height: 37rem;
+        }
+        @media screen and (min-width: $md_breakpoint) {
+            height: 43rem;
+        }
+        @media screen and (min-width: $lg_breakpoint) {
+            height: 53rem;
+        }
+        @media screen and (min-width: $xl_breakpoint) {
+            height: 67rem;
+        }
+    }
+    .soulTrailer {
+        width: 100%;
+        height: 100%;
     }
 }

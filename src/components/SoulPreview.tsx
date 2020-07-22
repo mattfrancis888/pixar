@@ -42,6 +42,34 @@ const Content: React.FC<{}> = () => {
                     special.”
                 </p>
             </div>
+
+            <div className="trailersContainer">
+                <h1>Trailers</h1>
+                <div className="trailerVideosContainer">
+                    <div className="soulTrailerContainer">
+                        <iframe
+                            className="soulTrailer"
+                            title="soulTrailer"
+                            src="https://www.youtube.com/embed/xOsLIiBStEs"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; 
+                encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    <div className="soulTrailerContainer">
+                        <iframe
+                            className="soulTrailer"
+                            src="https://www.youtube.com/embed/4TojlZYqPUo"
+                            title="soulTeaserTrailer"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; 
+                encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
