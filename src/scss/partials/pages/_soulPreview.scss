@@ -1,0 +1,35 @@
+.soulLogoContainer {
+    margin: 10rem 0;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.soulDescriptionContainer {
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    margin: 0 1.5rem;
+    margin-top: 10rem;
+    padding-top: 3rem;
+    p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.1rem;
+        line-height: 3.7rem;
+        text-transform: none;
+        color: $light-grey;
+    }
+    @media screen and (min-width: $sm_breakpoint) {
+        margin: 0 5rem;
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        margin: 0 8rem;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        margin: 0 15rem;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        margin: 0 25rem;
+    }
+}
