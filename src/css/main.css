@@ -509,12 +509,6 @@ nav {
   flex-direction: column;
   justify-content: space-between;
 }
-.featuredContentContainer h2 {
-  text-transform: uppercase;
-}
-.featuredContentContainer img {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .featuredContentContainer {
     flex-direction: row;
@@ -526,6 +520,8 @@ nav {
   margin: 0 1rem;
 }
 .featuredContent h2 {
+  cursor: pointer;
+  text-transform: uppercase;
   padding: 3rem 0;
   font-style: normal;
   letter-spacing: 1rem;
@@ -535,6 +531,10 @@ nav {
     font-size: 1.4rem;
     letter-spacing: 0.5rem;
   }
+}
+.featuredContent img {
+  cursor: pointer;
+  width: 100%;
 }
 
 footer {
@@ -670,7 +670,7 @@ footer {
 }
 
 .soulLogoContainer {
-  margin: 10rem 0;
+  padding: 10rem 20rem;
   width: 100%;
 }
 .soulLogoContainer img {

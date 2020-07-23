@@ -6,6 +6,7 @@ import Content from "./Content";
 import Footer from "../components/Footer";
 import featureFilms from "./FeatureFilms";
 import SoulPreview from "./SoulPreview";
+import OnwardPreview from "./OnwardPreview";
 const App: React.FC<{}> = () => {
     console.log(history);
     return (
@@ -20,6 +21,12 @@ const App: React.FC<{}> = () => {
                         component={featureFilms}
                     />
                     <Route path="/soul-preview" exact component={SoulPreview} />
+                    {/* <Route path="/onward-preview" exact component={} /> */}
+                    <Route
+                        path="/onward-preview"
+                        exact
+                        component={OnwardPreview}
+                    />
                 </Switch>
                 <Footer />
             </Router>

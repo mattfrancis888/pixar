@@ -2,7 +2,7 @@ import React from "react";
 import soulLogo from "../img/soulLogo.jpg";
 const Content: React.FC<{}> = () => {
     return (
-        <div>
+        <React.Fragment>
             <div className="soulLogoContainer">
                 <img src={soulLogo} alt="soul logo" />
             </div>
@@ -70,7 +70,7 @@ const Content: React.FC<{}> = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     );
 };
 export default Content;
