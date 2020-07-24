@@ -9,6 +9,7 @@ import { StoreState } from "../reducers";
 import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 export interface HeaderProps {
+    //Props from redux
     headerOverlay: boolean;
     showHeaderOverlay(shouldShowHeaderOverlay: boolean): void;
 }

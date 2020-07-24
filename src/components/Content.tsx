@@ -2,7 +2,9 @@ import React from "react";
 import pixarCareer from "../img/pixar_career.jpeg";
 import onward from "../img/onward.jpg";
 import soul from "../img/soul.jpg";
+import { useHistory } from "react-router";
 const Content: React.FC<{}> = () => {
+    const history = useHistory();
     return (
         <div>
             <div className="contentContainer">
@@ -22,12 +24,37 @@ const Content: React.FC<{}> = () => {
                         <h2 className="">Careers At Pixar</h2>
                     </div>
                     <div className="featuredContent">
-                        <img src={soul} alt="soul" />
-                        <h2 className="">Soul</h2>
+                        <img
+                            src={soul}
+                            alt="soul"
+                            onClick={() => {
+                                history.push("/soul-preview");
+                            }}
+                        />
+                        <h2
+                            onClick={() => {
+                                history.push("/soul-preview");
+                            }}
+                        >
+                            Soul
+                        </h2>
                     </div>
                     <div className="featuredContent">
-                        <img src={onward} alt="Onward" />
-                        <h2 className="">Onward Trailers</h2>
+                        <img
+                            src={onward}
+                            alt="Onward"
+                            onClick={() => {
+                                history.push("/onward-preview");
+                            }}
+                        />
+                        <h2
+                            className=""
+                            onClick={() => {
+                                history.push("/onward-preview");
+                            }}
+                        >
+                            Onward Trailers
+                        </h2>
                     </div>
                 </div>
             </div>

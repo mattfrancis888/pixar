@@ -8,7 +8,9 @@ import featureFilms from "./FeatureFilms";
 import SoulPreview from "./SoulPreview";
 import OnwardPreview from "./OnwardPreview";
 const App: React.FC<{}> = () => {
-    console.log(history);
+    history.listen((_) => {
+        window.scrollTo(0, 0);
+    });
     return (
         <React.Fragment>
             <Router history={history}>

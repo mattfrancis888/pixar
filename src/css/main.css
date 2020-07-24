@@ -669,22 +669,22 @@ footer {
   height: 100%;
 }
 
-.soulLogoContainer {
+.filmPreviewLogoContainer {
   padding: 10rem 20rem;
   width: 100%;
 }
-.soulLogoContainer img {
+.filmPreviewLogoContainer img {
   width: 100%;
 }
 
-.soulDescriptionContainer {
+.filmPreviewDescriptionContainer {
   text-align: center;
   border-top: 1px solid #dddddd;
   margin: 0 1.5rem;
   margin-top: 10rem;
   padding-top: 3rem;
 }
-.soulDescriptionContainer p {
+.filmPreviewDescriptionContainer p {
   font-weight: 400;
   font-style: normal;
   font-size: 2.1rem;
@@ -692,31 +692,31 @@ footer {
   color: rgba(29, 29, 29, 0.7);
 }
 @media screen and (min-width: 520px) {
-  .soulDescriptionContainer {
+  .filmPreviewDescriptionContainer {
     margin: 0 5rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .soulDescriptionContainer {
+  .filmPreviewDescriptionContainer {
     margin: 0 8rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .soulDescriptionContainer {
+  .filmPreviewDescriptionContainer {
     margin: 0 15rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .soulDescriptionContainer {
+  .filmPreviewDescriptionContainer {
     margin: 0 25rem;
   }
 }
 
-.trailersContainer {
+.filmPreviewTrailersSection {
   border-top: 1px solid #dddddd;
   margin: 5rem 3rem;
 }
-.trailersContainer h1 {
+.filmPreviewTrailersSection h1 {
   font-size: 3.2rem;
   letter-spacing: 0.2rem;
   line-height: 3.3rem;
@@ -725,52 +725,52 @@ footer {
   margin-bottom: 5rem;
 }
 @media screen and (min-width: 768px) {
-  .trailersContainer {
+  .filmPreviewTrailersSection {
     margin: 5rem 8rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .trailersContainer {
+  .filmPreviewTrailersSection {
     margin: 5rem 12rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .trailersContainer {
+  .filmPreviewTrailersSection {
     margin: 5rem 14rem;
   }
 }
 
-.trailerVideosContainer {
+.filmPreviewTrailerWrap {
   display: flex;
   flex-direction: column;
   margin-bottom: 10rem;
 }
-.trailerVideosContainer .soulTrailerContainer {
+.filmPreviewTrailerWrap .filmPreviewTrailerContainer {
   width: 100%;
   height: 33rem;
   margin-bottom: 5rem;
 }
 @media screen and (min-width: 520px) {
-  .trailerVideosContainer .soulTrailerContainer {
+  .filmPreviewTrailerWrap .filmPreviewTrailerContainer {
     height: 37rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .trailerVideosContainer .soulTrailerContainer {
+  .filmPreviewTrailerWrap .filmPreviewTrailerContainer {
     height: 43rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .trailerVideosContainer .soulTrailerContainer {
+  .filmPreviewTrailerWrap .filmPreviewTrailerContainer {
     height: 53rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .trailerVideosContainer .soulTrailerContainer {
+  .filmPreviewTrailerWrap .filmPreviewTrailerContainer {
     height: 67rem;
   }
 }
-.trailerVideosContainer .soulTrailer {
+.filmPreviewTrailerWrap .filmPreviewTrailer {
   width: 100%;
   height: 100%;
 }
