@@ -20,8 +20,20 @@ const Content: React.FC<{}> = () => {
                 </h2>
                 <div className="featuredContentContainer">
                     <div className="featuredContent">
-                        <img src={pixarCareer} alt="careers at pixar" />
-                        <h2 className="">Careers At Pixar</h2>
+                        <img
+                            onClick={() => {
+                                history.push("/careers");
+                            }}
+                            src={pixarCareer}
+                            alt="careers at pixar"
+                        />
+                        <h2
+                            onClick={() => {
+                                history.push("/careers");
+                            }}
+                        >
+                            Careers At Pixar
+                        </h2>
                     </div>
                     <div className="featuredContent">
                         <img

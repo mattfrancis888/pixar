@@ -7,6 +7,13 @@ import Footer from "../components/Footer";
 import featureFilms from "./FeatureFilms";
 import SoulPreview from "./SoulPreview";
 import OnwardPreview from "./OnwardPreview";
+import Careers from "./Careers";
+import About from "./About";
+interface HeaderProps {
+    headerOverlay: boolean;
+    showHeaderOverlay(shouldShowHeaderOverlay: boolean): void;
+}
+
 const App: React.FC<{}> = () => {
     history.listen((_) => {
         window.scrollTo(0, 0);
@@ -23,12 +30,13 @@ const App: React.FC<{}> = () => {
                         component={featureFilms}
                     />
                     <Route path="/soul-preview" exact component={SoulPreview} />
-                    {/* <Route path="/onward-preview" exact component={} /> */}
                     <Route
                         path="/onward-preview"
                         exact
                         component={OnwardPreview}
                     />
+                    <Route path="/careers" exact component={Careers} />
+                    <Route path="/about" exact component={About} />
                 </Switch>
                 <Footer />
             </Router>

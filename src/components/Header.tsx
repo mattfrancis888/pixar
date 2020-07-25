@@ -46,7 +46,10 @@ const Header: React.FC<HeaderProps> = (props) => {
                         {FEATURE_FILMS}
                     </h1>
                 </Link>
-                <h1>{ABOUT}</h1>
+
+                <Link to="/about">
+                    <h1>{ABOUT}</h1>
+                </Link>
             </div>
             <Overlay />
             {/* {props.headerOverlay ? <Overlay /> : null} */}

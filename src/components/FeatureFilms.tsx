@@ -38,13 +38,17 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
             });
     };
     return (
-        <div>
-            <div className="heroContainer">
-                <img className="heroImage" src={onwardHero} alt=" scene" />
-                <h1>Featured Films</h1>
+        <React.Fragment>
+            <div className="heroParallaxContainer">
+                <img
+                    className="heroParallaxImage"
+                    src={onwardHero}
+                    alt=" scene"
+                />
+                <h1 className="heroParallaxTitle">Featured Films</h1>
             </div>
             <div className="filmsContainer">{renderList()}</div>
-        </div>
+        </React.Fragment>
     );
 };
 
