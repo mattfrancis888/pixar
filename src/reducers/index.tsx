@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import showOverlayReducer from "./showOverlayReducer";
 import filmsReducer from "./filmsReducer";
-import { Films } from "../actions";
+import { Film } from "../actions";
 export interface StoreState {
     headerOverlay: boolean;
-    films: Films[];
+    films: Film[];
 }
 export default combineReducers<StoreState>({
     headerOverlay: showOverlayReducer,

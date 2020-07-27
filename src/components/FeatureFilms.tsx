@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { Films, fetchFilms } from "../actions";
+import { Film, fetchFilms } from "../actions";
 import { StoreState } from "../reducers";
 import onwardHero from "../img/onward_hero.jpg";
 import { Image, CloudinaryContext } from "cloudinary-react";
 import Loading from "./Loading";
 export interface FeatureFilmsProps {
     fetchFilms(): any;
-    films: Films[];
+    films: Film[];
 }
 const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
     useEffect(() => {
@@ -24,8 +24,11 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
         else
             return props.films.map((film) => {
                 return (
-                    <CloudinaryContext cloudName="du8n2aa4p">
-                        <div className="film" key={film.id.toString()}>
+                    <CloudinaryContext
+                        cloudName="du8n2aa4p"
+                        key={film.id.toString()}
+                    >
+                        <div className="film">
                             <Image
                                 className="filmImage"
                                 publicId={film.image}
@@ -52,7 +55,7 @@ const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {
     );
 };
 
-const mapStateToProps = (state: StoreState): { films: Films[] } => {
+const mapStateToProps = (state: StoreState): { films: Film[] } => {
     return {
         films: state.films,
     };

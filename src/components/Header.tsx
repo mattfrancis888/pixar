@@ -6,7 +6,7 @@ import Overlay from "./Overlay";
 import { connect } from "react-redux";
 import { showHeaderOverlay } from "../actions";
 import { StoreState } from "../reducers";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 export interface HeaderProps {
     //Props from redux

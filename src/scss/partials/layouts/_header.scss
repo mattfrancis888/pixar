@@ -23,6 +23,7 @@ nav {
     }
 }
 .hamburgerIcon {
+    cursor: pointer;
     width: 3.4rem;
     @media screen and (min-width: $md_breakpoint) {
         display: none;
