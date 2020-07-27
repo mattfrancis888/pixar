@@ -1,0 +1,43 @@
+.careersContainer {
+    text-align: center;
+    padding: 3rem 4rem;
+    background-color: white;
+
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 3rem 12rem;
+    }
+    h2 {
+        letter-spacing: 0.4rem;
+        font-size: 3rem;
+        font-weight: 400;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 3.9rem;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: $text-colors;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 2.2rem;
+            line-height: 3.8rem;
+        }
+    }
+}
+
+.careerListingButton {
+    cursor: pointer;
+    margin: 5rem 0 10rem 0;
+    background-color: white;
+    border: 0.3rem solid black;
+    font-size: 1.6rem;
+    padding: 2rem 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}

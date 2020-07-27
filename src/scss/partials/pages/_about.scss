@@ -1,0 +1,57 @@
+.aboutInfoContainer {
+    padding: 3rem 2rem;
+    background-color: white;
+    h1 {
+        font-weight: 900;
+        font-size: 2.3rem;
+        letter-spacing: 0.6rem;
+        text-transform: uppercase;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 4.1rem;
+            letter-spacing: 1rem;
+        }
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        padding: 3rem 7rem;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 3rem 15rem;
+    }
+}
+.pixarContactAndAddress {
+    margin: 5rem 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    color: $text-colors;
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin: 7rem 0;
+    }
+}
+
+.companyFAQContainer {
+    font-size: 1.7rem;
+    letter-spacing: 0;
+    line-height: 2.5rem;
+    color: $text-colors;
+    margin-bottom: 10rem;
+    h2 {
+        font-size: 1.8rem;
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 2rem;
+        }
+        @media screen and (min-width: $lg_breakpoint) {
+            font-size: 2.5rem;
+        }
+    }
+    @media screen and (min-width: $md_breakpoint) {
+        font-size: 2rem;
+        line-height: 3.5rem;
+        margin-top: 12rem;
+    }
+}

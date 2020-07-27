@@ -1,0 +1,39 @@
+{
+    "films": [
+        {
+            "id": 1,
+            "title": "Onward",
+            "image": "onwardFilm_akunoo.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Toy Story 4",
+            "image": "toystory4Film_iu1308.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Incredibles 2",
+            "image": "incredibles2Film_kan9rw.png"
+        },
+        {
+            "id": 4,
+            "title": "Coco",
+            "image": "cocoFilm_dqpkh9.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Cars 3",
+            "image": "cars3Film_er8e7c.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Finding Dory",
+            "image": "doryFilm_vpkspb.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Wall-E",
+            "image": "walleFilm_hseksy.jpg"
+        }
+    ]
+}
