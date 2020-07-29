@@ -676,18 +676,22 @@ footer {
 }
 
 .filmPreviewLogoContainer {
-  padding: 10rem 20rem;
+  padding: 10rem 0;
   width: 100%;
 }
 .filmPreviewLogoContainer img {
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .filmPreviewLogoContainer {
+    padding: 10rem 20rem;
+  }
 }
 
 .filmPreviewDescriptionContainer {
   text-align: center;
   border-top: 1px solid #dddddd;
   margin: 0 1.5rem;
-  margin-top: 10rem;
   padding-top: 3rem;
 }
 .filmPreviewDescriptionContainer p {

@@ -1,8 +1,11 @@
 .filmPreviewLogoContainer {
-    padding: 10rem 20rem;
+    padding: 10rem 0;
     width: 100%;
     img {
         width: 100%;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        padding: 10rem 20rem;
     }
 }
 
@@ -10,7 +13,7 @@
     text-align: center;
     border-top: 1px solid $very-light-grey;
     margin: 0 1.5rem;
-    margin-top: 10rem;
+
     padding-top: 3rem;
     p {
         font-weight: 400;

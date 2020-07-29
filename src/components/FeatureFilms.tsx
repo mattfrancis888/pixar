@@ -6,7 +6,8 @@ import onwardHero from "../img/onward_hero.jpg";
 import { Image, CloudinaryContext } from "cloudinary-react";
 import Loading from "./Loading";
 export interface FeatureFilmsProps {
-    fetchFilms(): any;
+    // fetchFilms: Function;
+    fetchFilms(): void;
     films: Film[];
 }
 const FeatureFilms: React.FC<FeatureFilmsProps> = (props) => {

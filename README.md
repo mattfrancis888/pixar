@@ -1,44 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pixar
 
-## Available Scripts
+Replication of [Pixar site](https://www.pixar.com/). Films are stored as a JSON database online.
 
-In the project directory, you can run:
+Developed with React, Typescript, Redux, JS, HTML, CSS, [Express using JSON-server library to connect our JSON database and app together](https://github.com/typicode/json-server).
 
-### `npm start`
+Cloudinary is used to store film images.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Why I Built It and What I've Learned:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-   To understand the benefits and drawbacks of Typescript in a development setting of React and Redux.
 
-### `npm test`
+## Typescript For React:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pros:
 
-### `npm run build`
+-   Allows code to be "descriptive". Making the process of understanding and maintaining the code easier. Higher confidence in code not breaking.
+-   Allows us to catch errors during development/compile-time rather than run-time, which facilitates debugging.
+-   Catching basic type errors. Such as assigning a variable that is meant String values to have a value of an int; passing in a value that is an int to a function argument that is supposed to have a String.
+-   Catching complex types errors. Such as an undefined prop and a prop that has the wrong type in a component. Caught by defining **interfaces** that will tell the component what kind of props it should have.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cons:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+-   Certain npm packages do not come with a type definition file(@types/package_name). This would lead to issues such as TS not compiling. An approach to the problem would be to create our own type definition file (desc.d.ts is created in this project to bypass the compiler error).
+-   TS could break the code when packages are updated/type definition files are updated; it would require us to change the types in our code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Typescript For Express:
 
-### `npm run eject`
+-   TS is not used in Express (server.js) in this project because server.js uses JSON-Server library to operate. I figured it would be more knowledgable to learn more about TS without using JSON-Server library.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## External resources:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   Prettier to format code and EsLint for linting.
+-   Redux dev tool google chrome extension to check the values of the states.
+-   JSON-server for a local database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## What It Looks Like
+<img src="readmeImg/largePixarHomeContent.jpg" height="350"/>
+<img src="readmeImg/smallPixarFeaturedFilms.png" height="350"/>
+<img src="readmeImg/largePixarFeaturedFilmsList.jpg" height="350"/>
+<img src="readmeImg/largePixarFeaturedFilms.jpg" height="350"/>
+<img src="readmeImg/pixarLoading.png" height="350"/>
+<img src="readmeImg/largePixarHome.png" width="700"/>
+<img src="readmeImg/medPixarSoul.png" height="350"/>
+<img src="readmeImg/smallPixarAbout.png" height="350"/>
+<img src="readmeImg/smallPixarCareers.png" height="350"/>
+<img src="readmeImg/smallPixarCareersInfo.png" height="350"/>
+<img src="readmeImg/smallPixarFAQ.png" height="350"/>
+<img src="readmeImg/smallPixarOnward.png" height="350"/>
+<img src="readmeImg/smallPixarOnwardTrailer.png" height="350"/>
+<img src="readmeImg/smallPixarSoulTrailer.png" height="350"/>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Getting Started
 
-## Learn More
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the project. Use `npm install` to install all the dependencies. Run the project with `npm start` for development or `npm run build` for production.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. OPTIONAL: If you want to make changes locally, on the terminal, go to the `backend` directory. Type `npm start` to start the local JSON-server server/api which will connect the front-end to the database. Type `npm run start:json` to turn on the local JSON database. Then change the axiosConfig route file to http://localhost:3000.
+
+# Prerequisites
+
+What things you need to install the software
+
+```
+- Any package manager (npm, yarn)
+```
+
+# Versioning
+
+None
