@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { showHeaderOverlay } from "../actions";
 import { StoreState } from "../reducers";
 import { HeaderProps } from "./Header";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 const Overlay: React.FC<HeaderProps> = (props) => {
     const history = useHistory();
     return (

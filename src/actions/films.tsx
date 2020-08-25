@@ -27,7 +27,7 @@ export const fetchFilms = () => async (dispatch: Dispatch) => {
     //is served locally
 
     //if based on online database:
-    const response = await films.get<{ films: Film[] }>("/films");
+    const response = await films.get<FetchFilmsResponse>("/films");
     //response.data returns  //  {films: Array(7)}
     //        films: (7) [{…}, {…}, {…}, {…}, {…}, {…}, {…}]
     //        __proto__: Object if database

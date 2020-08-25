@@ -2,7 +2,7 @@ import React from "react";
 import pixarCareer from "../img/pixar_career.jpeg";
 import onward from "../img/onward.jpg";
 import soul from "../img/soul.jpg";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 const Content: React.FC<{}> = () => {
     const history = useHistory();
     return (
